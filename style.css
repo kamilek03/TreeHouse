@@ -3,6 +3,7 @@
 	--grey: #777777;
 	--green: #7cc576;
 	--darkgrey: #555555;
+	--dark: #222222;
 }
 
 * {
@@ -78,7 +79,7 @@ body {
 	padding: 2rem;
 	color: var(--white);
 	text-decoration: none;
-	font-size: 5vw;
+	font-size: 3vw;
 	border-top: 1px solid var(--white);
 	display: block;
 	transition: 0.3s;
@@ -90,7 +91,7 @@ body {
 	padding-top: 0.2em;
 	color: var(--white);
 	text-decoration: none;
-	font-size: 15vw;
+	font-size: 25vw;
 	display: block;
 	transition: 0.3s;
 	text-align: center;
@@ -204,7 +205,106 @@ body {
 	color: var(--grey);
 }
 
-@media only screen and (max-width: 600px) {
+.one {
+	grid-column-start: 2;
+}
+
+.boxes {
+	display: grid;
+	grid-template-columns: 1fr 290px 290px 290px 1fr;
+	grid-gap: 50px;
+	margin-bottom: 6.25rem;
+}
+
+.info h1 {
+	margin-top: 6.25rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 2.5rem;
+	color: var(--dark);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.info p {
+	margin-top: 1.25rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 1.25rem;
+	color: var(--grey);
+	letter-spacing: 1px;
+	text-align: center;
+	margin-bottom: 5.62rem;
+}
+
+.box {
+	width: 100%;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.box h2 {
+	margin-top: 2.5rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 1.1rem;
+	color: var(--dark);
+	text-transform: uppercase;
+}
+
+.box p {
+	margin-top: 1.1rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 0.9rem;
+	color: var(--grey);
+	background-color: aqua;
+}
+
+.box img {}
+
+@media only screen and (max-width: 1100px) {
+	.boxes {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-gap: 50px;
+		margin-bottom: 6.25rem;
+		grid-template-areas:
+			'grid-1'
+			'grid-2'
+			'grid-3';
+
+	}
+
+	.box p {
+		margin-top: 1.1rem;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 400;
+		font-size: 0.9rem;
+		color: var(--grey);
+		background-color: aqua;
+		max-width: 290px;
+	}
+
+	.grid-1 {
+		grid-area: grid-1;
+	}
+
+	.grid-2 {
+		grid-area: grid-2;
+	}
+
+	.grid-3 {
+		grid-area: grid-3;
+	}
+
+}
+
+@media only screen and (max-width: 1000px) {
 	.navbar {
 		overflow: hidden;
 		height: 105px;
