@@ -85,4 +85,73 @@
 		}
 	</script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<nav class="nav">
+				<div class="nav-wrapper">
+					<nav class="navbar">
+						<div class="logo">
+							<div class="logo-pic"><img src="img/leaf.png" alt=""></div>
+							<h1 class="logo-text">TreeHouse</h1>
+						</div>
+						<span class="open-slide">
+							<a href="#" onclick="openSlideMenu()">
+								<svg width="30" height="30">
+									<path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+									<path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+									<path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+								</svg>
+							</a>
+						</span>
+
+						<ul class="navbar-nav">
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Home</a></li>
+						</ul>
+					</nav>
+
+					<div id="side-menu" class="side-nav">
+						<p href="#" class="btn-close" onclick="closeSlideMenu()">&times;</p>
+						<a href="#">Home</a>
+						<a href="#">About</a>
+						<a href="#">Services</a>
+						<a href="#">Contact</a>
+					</div>
+				</div>
+
+			</nav>
+			<section class="background">
+				<h1>Creative Digital Solutions</h1>
+				<h3>Lorem ipsum dolor sit amet.</h3>
+				<button class="btn">See portfolio</button>
+			</section>
+		</header>
+		<h1>HEJ MARLENKA LUBIE CIE!!!!</h1>
+	</div>
+	<script>
+		function openSlideMenu() {
+			document.getElementById('side-menu').style.width = '50vw';
+			document.getElementById('main').style.marginLeft = '0';
+		}
+
+		function closeSlideMenu() {
+			document.getElementById('side-menu').style.width = '0';
+			document.getElementById('main').style.marginLeft = '0';
+		}
+	</script>
+</body>
+>>>>>>> 31c47cc5bbcab8a0a9d078d8ed3adbe2d071b995
 </html>
