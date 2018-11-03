@@ -204,7 +204,7 @@ body {
 	color: var(--grey);
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
 	.navbar {
 		overflow: hidden;
 		height: 105px;
