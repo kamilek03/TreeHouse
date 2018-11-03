@@ -261,7 +261,6 @@ body {
 	font-weight: 400;
 	font-size: 0.9rem;
 	color: var(--grey);
-	background-color: aqua;
 }
 
 .box img {}
@@ -286,7 +285,6 @@ body {
 		font-weight: 400;
 		font-size: 0.9rem;
 		color: var(--grey);
-		background-color: aqua;
 		max-width: 290px;
 	}
 
